@@ -76,8 +76,9 @@
         text-align: right;
       }
 
-      .checkTime{
+      .checkTime {
         background-color: black !important;
+        font-size: 1rem !important;
       }
 
       .div_chat div {
@@ -118,24 +119,22 @@
         margin: 0.5%;
       }
 
-      .div_chat.other-chat{
-        display:flex;
+      .div_chat.other-chat {
+        display: flex;
         align-items: center;
       }
 
-      .div_chat.other-chat .checkTime{
-        order:3;
+      .div_chat.other-chat .checkTime {
+        order: 3;
       }
 
-      .div_chat.other-chat div{
-        order:2;
+      .div_chat.other-chat div {
+        order: 2;
       }
 
-      .div_chat.other-chat span{
-        order:1;
+      .div_chat.other-chat span {
+        order: 1;
       }
-
-      
     </style>
   </head>
 
@@ -219,7 +218,7 @@
         checkTime.textContent = data.time;
         checkTime.classList.add("checkTime");
         div.appendChild(checkTime);
-        
+
         div_chat.textContent = data.msg;
         div.classList.add("div_chat");
         div.appendChild(div_chat);
