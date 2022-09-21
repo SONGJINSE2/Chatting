@@ -76,9 +76,10 @@
         text-align: right;
       }
 
-      .checkTime div {
-        background-color: black;
+      .checkTime{
+        background-color: black !important;
       }
+
       .div_chat div {
         font-size: large;
         background-color: rgb(52, 51, 51);
@@ -116,6 +117,25 @@
       .emoji_container button {
         margin: 0.5%;
       }
+
+      .div_chat.other-chat{
+        display:flex;
+        align-items: center;
+      }
+
+      .div_chat.other-chat .checkTime{
+        order:3;
+      }
+
+      .div_chat.other-chat div{
+        order:2;
+      }
+
+      .div_chat.other-chat span{
+        order:1;
+      }
+
+      
     </style>
   </head>
 
@@ -197,9 +217,9 @@
         let checkTime = document.createElement("div");
 
         checkTime.textContent = data.time;
-        div.classList.add("checkTime");
+        checkTime.classList.add("checkTime");
         div.appendChild(checkTime);
-
+        
         div_chat.textContent = data.msg;
         div.classList.add("div_chat");
         div.appendChild(div_chat);
