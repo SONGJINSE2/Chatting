@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "DOSMyungjo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSMyungjo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-size: small;
+  background-image: url("/static/background.gif");
+  font-family: "DOSMyungjo";
+}
+#container {
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+}
+.messageBox2 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.chat-group {
+  display: inline-block;
+  width: 100%;
+  align-items: center;
+  padding: 1%;
+  box-sizing: border-box;
+}
+.nick-list {
+  display: inline-block;
+  width: 20%;
+}
+.message {
+  width: 20%;
+}
+
+.chat-list {
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  background-color: black;
+  width: 100%;
+  height: 80%;
+  overflow: auto; /* 화면밖으로 객체가 나가 질 때 어떤식으로 바꿀지 */
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.chat-list div div {
+  display: inline-block;
+  padding: 5px;
+}
+
+.notice {
+  display: block;
+  text-align: center;
+  font-size: large;
+  margin: 20px;
+}
+.my-chat {
+  text-align: right;
+}
+
+.checkTime {
+  background-color: black !important;
+  font-size: 1rem !important;
+}
+
+.div_chat div {
+  font-size: large;
+  background-color: rgb(52, 51, 51);
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+  word-break: break-all; /* 영어,숫자가 화면밖으로 나갈 때 글자를 아래로 바꿔주는 기능 */
+}
+
+.other-chat div {
+  font-size: large;
+  background-color: rgb(52, 51, 51);
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+  word-break: break-all; /* 영어,숫자가 화면밖으로 나갈 때 글자를 아래로 바꿔주는 기능 */
+}
+
+input {
+  width: 70%;
+  height: 32px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
+  margin: 10px;
+}
+
+.emoji_container {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  width: 100%;
+  padding: 2px;
+}
+.emoji_container button {
+  margin: 0.5%;
+}
+.emoji_wrapper {
+  width: 90%;
+}
+.div_chat.other-chat {
+  display: flex;
+  align-items: center;
+}
+
+.div_chat.other-chat .checkTime {
+  order: 3;
+}
+
+.div_chat.other-chat div {
+  order: 2;
+}
+
+.div_chat.other-chat span {
+  order: 1;
+}
